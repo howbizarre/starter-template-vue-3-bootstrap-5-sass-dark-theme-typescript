@@ -1,5 +1,4 @@
 <template>
-  <h1>Nested Views</h1>
   <Nav />
   <RouterView />
 </template>
