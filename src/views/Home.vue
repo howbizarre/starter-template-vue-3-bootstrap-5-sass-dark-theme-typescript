@@ -115,7 +115,9 @@
 import { reactive, onMounted, ref } from "vue";
 import { Modal, Toast } from "bootstrap";
 
-const props = defineProps(['msg']);
+defineProps({
+  msg: String
+});
 
 const state = reactive({ count: 0 });
 const modal = ref();
