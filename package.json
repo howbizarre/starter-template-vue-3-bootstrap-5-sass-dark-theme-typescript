@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
-    "build-only": "vite build",
+    "build-only": "vite build --base=/vue-bootstrap",
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {

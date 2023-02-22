@@ -1,8 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-/** Layouts */
-import Page from "@/layouts/Page.vue";
-
 export const routes = [
   {
     path: "/",
