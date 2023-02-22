@@ -24,7 +24,7 @@ This template should help get you started developing with Vue 3 in Vite and Boot
 
 ## Developer notes
 
-There are two different layouts (Default and Page) — first one for the home page and another for the rest. Layouts are changed based on [Nested Named Routes](https://router.vuejs.org/guide/essentials/nested-routes.html#nested-named-routes) in Vue Router. This way does not use dynamic imports and works faster.
+There are two different layouts (Default and Page) — the first one for the home page and the second for the rest. Layouts are changed based on [Nested Named Routes](https://router.vuejs.org/guide/essentials/nested-routes.html#nested-named-routes) in Vue Router. This way does not use dynamic imports and works faster.
 
 ## Directory structure
 
