@@ -29,27 +29,39 @@ There are two different layouts (Default and Page) — first one for the home pa
 ## Directory structure
 
 ```
-├───public
+PROJECT /* Entry point and configurations */
+│   .env.development
+│   .env.production
+│   env.d.ts
+│   index.html
+│   package-lock.json
+│   package.json
+│   README.md
+│   tsconfig.config.json
+│   tsconfig.json
+│   vite.config.ts
+│
+├───public /* All static assets to the server, as robots.txt and more... */
 │       favicon.ico
 │
-└───src
+└───src /* In The Begining */
     │   App.vue
     │   main.ts
     │
-    ├───components
+    ├───components /* Components for Views and Layouts */
     │       Footer.vue
     │       Heads.vue
     │       Nav.vue
     │       Refs.vue
     │
-    ├───layouts
+    ├───layouts /* You can add your own Layout files */
     │       Default.vue
     │       Page.vue
     │
-    ├───router
+    ├───router /* Define the routes of your app */
     │       index.ts
     │
-    └───views
+    └───views /* Change, Add, Remove the views be your needs */
             About.vue
             Contacts.vue
             Home.vue
