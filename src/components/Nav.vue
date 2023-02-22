@@ -47,8 +47,8 @@
           <li class="nav-item text-uppercase" v-for="route in routes" :key="route.path">
             <router-link :to="route.path" class="nav-link" :title="route.children[0].name"
               :class="{ active: isActive(route.path) }">
-              <i class="bi bi-house-fill" v-if="route.path === '/'"></i>
-              {{ route.path !== "/" ? route.children[0].name : "" }}
+              <i class="bi bi-house-fill" v-if="route.path === `${siteUrl}/`"></i>
+              {{ route.path !== `${siteUrl}/` ? route.children[0].name : "" }}
             </router-link>
           </li>
         </ul>
@@ -62,6 +62,8 @@ import { Collapse } from "bootstrap";
 import { computed } from "vue";
 import { useRouter } from "vue-router";
 import { routes } from "@/router";
+
+const siteUrl = import.meta.env.VITE_BUILD_ADDRESS;
 
 const router = useRouter();
 const activeRoute = computed(() => router.currentRoute.value.path);
