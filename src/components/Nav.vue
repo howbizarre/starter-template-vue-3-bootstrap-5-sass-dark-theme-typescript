@@ -62,9 +62,28 @@
 <script lang="ts" setup>
 import { computed } from "vue";
 import { useRouter } from "vue-router";
-import { routes } from "@/router/index";
+import { routes } from "@/router";
 
 const router = useRouter();
 const activeRoute = computed(() => router.currentRoute.value.path);
 const isActive = (path: string) => path === activeRoute.value;
 </script>
+
+<style lang="scss" scoped>
+$blc: #000;
+$lblc: rgba($blc, 0.65);
+
+a {
+  text-decoration: none;
+  color: $lblc;
+  transition: all 0.25s;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-link { border-top: 1px solid rgba($lblc, 0.01); }
+
+.nav-link.router-link-active.router-link-exact-active { border-top: 1px solid rgba($lblc, 0.2); }
+</style>
