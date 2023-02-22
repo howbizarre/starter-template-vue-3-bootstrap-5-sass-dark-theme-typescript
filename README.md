@@ -1,40 +1,56 @@
-# starter-template-vue-bootstrap-sass-typescript
+# Starter template based on Vue 3, Bootstrap 5, SASS and Typescript
 
-This template should help get you started developing with Vue 3 in Vite.
+This template should help get you started developing with Vue 3 in Vite and Bootstrap 5 with SASS.
 
-## Recommended IDE Setup
+## Frameworks
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [VueJS](https://vuejs.org/guide/quick-start.html)
+- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
-## Type Support for `.vue` Imports in TS
+## Supported preprocessors
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- [TypeScript](https://www.typescriptlang.org/docs/handbook/intro.html)
+- [SASS](https://sass-lang.com/documentation/)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Additional packages
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [Vue Router](https://router.vuejs.org/guide/)
+- [Process Environment](https://vitejs.dev/guide/env-and-mode.html)
 
-## Customize configuration
+## Builder
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- [Vite](https://vitejs.dev/guide/)
 
-## Project Setup
+## Developer notes
 
-```sh
-npm install
+There are two different layouts (Default and Page) — first one for the home page and another for the rest. Layouts are changed based on [Nested Named Routes](https://router.vuejs.org/guide/essentials/nested-routes.html#nested-named-routes) in Vue Router. This way does not use dynamic imports and works faster.
+
+## Directory structure
+
 ```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
+├───public
+│       favicon.ico
+│
+└───src
+    │   App.vue
+    │   main.ts
+    │
+    ├───components
+    │       Footer.vue
+    │       Heads.vue
+    │       Nav.vue
+    │       Refs.vue
+    │
+    ├───layouts
+    │       Default.vue
+    │       Page.vue
+    │
+    ├───router
+    │       index.ts
+    │
+    └───views
+            About.vue
+            Contacts.vue
+            Home.vue
 ```
