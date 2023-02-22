@@ -2,27 +2,27 @@ import { createRouter, createWebHistory } from "vue-router";
 
 /** Layouts */
 import Page from "@/layouts/Page.vue";
-import Default from "@/layouts/Default.vue";
-
-/** Views */
-import Home from "@/views/Home.vue";
-import About from "@/views/About.vue";
-import Contacts from "@/views/Contacts.vue";
 
 export const routes = [
   {
     path: "/",
-    component: Default,
+    component: () => import("@/layouts/Default.vue"),
     children: [
-      { path: "/", name: "Home", component: Home }
+      { path: "", name: "Home", component: () => import("@/views/Home.vue") }
     ],
   },
   {
-    path: "/",
-    component: Page,
+    path: "/about",
+    component: () => import("@/layouts/Page.vue"),
     children: [
-      { path: "about", name: "About", component: About },
-      { path: "contacts", name: "Contacts", component: Contacts },
+      { path: "", name: "About", component: () => import("@/views/About.vue") }
+    ],
+  },
+  {
+    path: "/contacts",
+    component: () => import("@/layouts/Page.vue"),
+    children: [
+      { path: "", name: "Contacts", component: () => import("@/views/Contacts.vue") },
     ],
   },
 ];

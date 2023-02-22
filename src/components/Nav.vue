@@ -44,15 +44,13 @@
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
-          <template v-for="rt in routes">
-            <li class="nav-item text-uppercase" v-for="route in rt.children" :key="route.path">
-              <router-link :to="route.path" class="nav-link" :title="route.name"
-                :class="{ active: isActive(route.path) }">
-                <i class="bi bi-house-fill" v-if="route.path === '/'"></i>
-                {{ route.path !== "/" ? route.name : "" }}
-              </router-link>
-            </li>
-          </template>
+          <li class="nav-item text-uppercase" v-for="route in routes" :key="route.path">
+            <router-link :to="route.path" class="nav-link" :title="route.children[0].name"
+              :class="{ active: isActive(route.path) }">
+              <i class="bi bi-house-fill" v-if="route.path === '/'"></i>
+              {{ route.path !== "/" ? route.children[0].name : "" }}
+            </router-link>
+          </li>
         </ul>
       </div>
     </nav>
@@ -80,7 +78,9 @@ a {
   transition: all 0.25s;
 
   &.nav-link.router-link-active.router-link-exact-active,
-  &:hover { color: $blc; }
+  &:hover {
+    color: $blc;
+  }
 }
 
 ul {
