@@ -1,7 +1,7 @@
 <template>
   <div class="row align-items-md-stretch">
     <div class="col-md-6 mb-4">
-      <div class="h-100 p-5 text-white bg-dark rounded-3">
+      <div class="h-100 p-5 text-white bg-dark border rounded-3">
         <h2>{{ msg }}</h2>
         <p>Before getting started with Bootstrap’s modal component, be sure to read the following as our menu options have recently changed.</p>
         <ul>
@@ -42,7 +42,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title text-dark" id="infoModalLabel">How many clicks you've passed?!</h5>
+                <h5 id="infoModalLabel">How many clicks you've passed?!</h5>
                 <button type="button" class="btn-close" @click="modal.hide()" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -57,7 +57,7 @@
       </div>
     </div>
     <div class="col-md-6 mb-4">
-      <div class="p-5 bg-light border rounded-3 mb-4">
+      <div class="p-5 box border rounded-3 mb-4">
         <h2>Bootstrap Toast</h2>
         <p>Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by mobile and desktop operating systems. They’re built with flexbox, so they’re easy to align and position.</p>
 
@@ -70,11 +70,11 @@
               <small>Some times ago</small>
               <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
-            <div class="toast-body bg-light">Hello, world! This is a toast message.</div>
+            <div class="toast-body box">Hello, world! This is a toast message.</div>
           </div>
         </div>
       </div>
-      <div class="p-5 bg-light border rounded-3">
+      <div class="p-5 box border rounded-3">
         <h2>Bootstrap Grid</h2>
         <p>
           Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with
@@ -99,7 +99,7 @@
           </div>
         </div>
       </div>
-      <div class="p-5 bg-light border rounded-3 mt-4 d-flex justify-content-between">
+      <div class="p-5 box border rounded-3 mt-4 d-flex justify-content-between">
         <i class="bi bi-house-fill"></i>
         <i class="bi bi-boxes"></i>
         <i class="bi bi-car-front-fill"></i>
@@ -130,3 +130,7 @@ onMounted(() => {
   toast.value = new Toast(bsToast.value);
 });
 </script>
+
+<style lang="scss" scoped>
+#infoModalLabel { color: var(--bs-body-color); }
+</style>
