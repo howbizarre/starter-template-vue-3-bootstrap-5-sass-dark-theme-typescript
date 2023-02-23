@@ -58,7 +58,6 @@
 </template>
 
 <script lang="ts" setup>
-import { Collapse } from "bootstrap";
 import { computed } from "vue";
 import { useRouter } from "vue-router";
 import { routes } from "@/router";
