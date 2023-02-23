@@ -119,11 +119,11 @@ defineProps({
   msg: String
 });
 
-const state = reactive({ count: 0 });
-const modal = ref();
-const toast = ref();
+const state     = reactive({ count: 0 });
+const modal     = ref();
+const toast     = ref();
 const infoModal = ref();
-const bsToast = ref();
+const bsToast   = ref();
 
 onMounted(() => {
   modal.value = new Modal(infoModal.value);
