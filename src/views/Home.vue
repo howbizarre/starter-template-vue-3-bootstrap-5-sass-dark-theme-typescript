@@ -112,7 +112,7 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive, onMounted, ref } from "vue";
+import { reactive, onMounted, ref, onUnmounted } from "vue";
 import { Modal, Toast } from "bootstrap";
 
 defineProps({
@@ -126,8 +126,13 @@ const infoModal = ref();
 const bsToast = ref();
 
 onMounted(() => {
-  modal.value =  new Modal(infoModal.value);
+  modal.value = new Modal(infoModal.value);
   toast.value = new Toast(bsToast.value);
+});
+
+onUnmounted(() => {
+  modal.value = "";
+  toast.value = "";
 });
 </script>
 
