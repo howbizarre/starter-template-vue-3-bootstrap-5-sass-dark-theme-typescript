@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light mb-4 border-bottom">
+    <nav class="navbar navbar-expand-lg mb-4 border-bottom">
       <router-link :to="routes[0].path" class="navbar-brand d-flex align-items-center text-dark text-decoration-none">
         <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 261.76 226.69">
           <path d="M161.096.001l-30.225 52.351L100.647.001H-.005l130.877 226.688L261.749.001z" fill="#41b883" />
@@ -69,20 +69,6 @@ const isActive = (path: string) => path === activeRoute.value;
 </script>
 
 <style lang="scss" scoped>
-$blc: #000;
-$lblc: rgba($blc, 0.5);
-
-a {
-  text-decoration: none;
-  color: $lblc;
-  transition: all 0.25s;
-
-  &.nav-link.router-link-active.router-link-exact-active,
-  &:hover {
-    color: $blc;
-  }
-}
-
 ul {
   list-style: none;
 }
