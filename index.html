@@ -7,90 +7,10 @@
 
         <title>Starter template for Vue 3 with Bootstrap 5, SASS and Bootstrap Icons on TypeScript!</title>
 
-        <style>
-            body,
-            html {
-                width: 100%;
-                height: 100%;
-            }
-
-            .aside {
-                position: fixed;
-                bottom: 5px;
-                right: 5px;
-            }
-
-            .hidden { display: none; }
-        </style>
+        <style>body, html { width: 100%; height: 100%; }</style>
     </head>
     <body class="d-flex flex-column">
         <div id="app" class="d-flex flex-column h-100"></div>
-
-        <aside class="aside">
-            <span id="theme-toggle" type="button">
-                <svg id="light-icon" width="20" height="20" class="hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-                <svg id="dark-icon" width="20" height="20" class="hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
-                </svg>
-            </span>
-        </aside>
-
-        <script>
-            const docElm = document.documentElement;
-            const themeToggleBtn = docElm.querySelector("#theme-toggle");
-            const darkIcon = themeToggleBtn.querySelector("#dark-icon");
-            const lightIcon = themeToggleBtn.querySelector("#light-icon");
-
-            if (localStorage.getItem("color-theme") === "dark") {
-                darkIcon.classList.remove("hidden");
-                docElm.classList.remove("light");
-                docElm.classList.add("dark");
-                docElm.dataset.bsTheme = "dark";
-            } else {
-                if ((!('color-theme' in localStorage)) && (window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                    darkIcon.classList.remove("hidden");
-                    docElm.classList.remove("light");
-                    docElm.classList.add("dark");
-                    docElm.dataset.bsTheme = "dark";
-                    localStorage.setItem("color-theme", "dark");
-                } else {
-                    lightIcon.classList.remove("hidden");
-                    docElm.classList.remove("dark");
-                    docElm.classList.add("light");
-                    docElm.dataset.bsTheme = "light";
-                    localStorage.setItem("color-theme", "light");
-                }
-            }
-    
-            themeToggleBtn.addEventListener("click", function () {
-                darkIcon.classList.toggle("hidden");
-                lightIcon.classList.toggle("hidden");
-    
-                if (localStorage.getItem("color-theme")) {
-                    if (localStorage.getItem("color-theme") === "light") {
-                        docElm.classList.add("dark");
-                        docElm.dataset.bsTheme = "dark";
-                        localStorage.setItem("color-theme", "dark");
-                    } else {
-                        docElm.classList.remove("dark");
-                        docElm.dataset.bsTheme = "light";
-                        localStorage.setItem("color-theme", "light");
-                    }
-                } else {
-                    if (docElm.classList.contains("dark")) {
-                        docElm.classList.remove("dark");
-                        docElm.dataset.bsTheme = "light";
-                        localStorage.setItem("color-theme", "light");
-                    } else {
-                        docElm.classList.add("dark");
-                        docElm.dataset.bsTheme = "dark";
-                        localStorage.setItem("color-theme", "dark");
-                    }
-                }
-            });
-        </script>
         <script type="module" src="./src/main.ts"></script>
     </body>
 </html>
