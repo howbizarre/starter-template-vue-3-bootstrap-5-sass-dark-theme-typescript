@@ -1,8 +1,9 @@
 # Starter template based on Vue 3, Bootstrap 5, SASS with Dark Theme and Typescript
 
-This template should help get you started developing with Vue 3 in Vite and Bootstrap 5 with SASS.
-Also added the new **Dark theme** bootstrap feature.
-The template is fully **Typescript** supported.
+This template was created to help web developers jumpstart their development.
+It uses **Vue 3** with **Composition API** and **Typescript** support and added **Bootstrap 5** with support for **SASS** and **Dark Themes**.
+
+Dark theme support in Bootstrap, by default, comes from version 5.3.0, which is currently an Alpha release. Therefore, it should be installed explicitly, and you should test it well before adding it to the production environment.
 
 ## Frameworks
 
