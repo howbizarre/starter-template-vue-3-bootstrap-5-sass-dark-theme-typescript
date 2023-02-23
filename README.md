@@ -1,6 +1,8 @@
 # Starter template based on Vue 3, Bootstrap 5, SASS and Typescript
 
 This template should help get you started developing with Vue 3 in Vite and Bootstrap 5 with SASS.
+Also added the new **Dark theme** bootstrap feature.
+The template is fully **Typescript** supported.
 
 ## Frameworks
 
