@@ -37,10 +37,10 @@
 </template>
   
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref, type Ref } from "vue";
 import Refs from "@/components/Refs.vue";
 
-const themeToggler = ref(false);
+const themeToggler: Ref<boolean> = ref(false);
 const docElm = document.documentElement;
 
 const changeTheme = (e: Event) => {

@@ -6,13 +6,8 @@
   </template>
   
   <script lang="ts" setup>
-  import { onBeforeUpdate, reactive, ref } from "vue";
+  import { reactive } from "vue";
 
   const year = new Date().getFullYear();
   const list = reactive([2019, year]);
-  const divs = ref();
-
-  onBeforeUpdate(() => {
-    divs.value = [];
-  });
   </script>
