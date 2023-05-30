@@ -64,7 +64,7 @@ PROJECT /* Entry point and configurations */
     ├───router /* Define the routes of your app */
     │       index.ts
     │
-    └───views /* Change, Add, Remove the views be your needs */
+    └───views /* Change, Add, Remove, and Update the views to your needs */
             About.vue
             Contacts.vue
             Home.vue
