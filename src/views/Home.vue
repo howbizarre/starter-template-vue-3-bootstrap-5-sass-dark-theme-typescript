@@ -83,19 +83,19 @@
         </p>
         <div class="bd-example bd-example-row">
           <div class="row">
-            <div class="col-12 col-lg-8">.col-12 .col-lg-8</div>
-            <div class="col-12 col-lg-4">.col-12 .col-lg-4</div>
+            <div class="col-12 col-lg-8 bg-secondary" style="--bs-bg-opacity:0.15">.col-12 .col-lg-8</div>
+            <div class="col-12 col-lg-4 bg-secondary bg-opacity-50">.col-12 .col-lg-4</div>
           </div>
 
           <div class="row">
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-            <div class="col-12 col-md-4">.col-12 .col-md-4</div>
+            <div class="col-6 col-md-4 bg-secondary bg-opacity-25">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4 bg-secondary bg-opacity-10">.col-6 .col-md-4</div>
+            <div class="col-12 col-md-4 bg-secondary bg-opacity-75">.col-12 .col-md-4</div>
           </div>
 
           <div class="row">
-            <div class="col-6">.col-6</div>
-            <div class="col-6">.col-6</div>
+            <div class="col-6 bg-secondary bg-gradient bg-opacity-50">.col-6</div>
+            <div class="col-6 bg-secondary bg-gradient bg-opacity-75">.col-6</div>
           </div>
         </div>
       </div>
