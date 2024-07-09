@@ -1,6 +1,6 @@
 {
   "name": "@howbizarre/starter-template-vue-bootstrap-sass-typescript",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "This boilerplate is based on Vue 3 with Bootstrap 5. TypeScript support. New Bootstrap 5 feature for Dark and Light theme. Bootstrap Icons and Vue Router have also been added.",
   "homepage": "https://bizarre.how/vue-bootstrap/",
   "license": "CC-BY-4.0",
