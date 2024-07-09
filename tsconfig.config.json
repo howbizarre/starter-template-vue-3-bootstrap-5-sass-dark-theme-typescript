@@ -3,6 +3,7 @@
   "include": ["vite.config.ts"],
   "compilerOptions": {
     "composite": true,
-    "types": ["node", "bootstrap", "vite/client"]
+    "types": ["node", "bootstrap", "vite/client"],
+    "noEmit": false
   }
 }
