@@ -6,7 +6,17 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url))
-    }
-  }
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+    },
+  },
+
+  /** This rule should be removed after new version of Bootstrap */
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: "modern-compiler",
+        silenceDeprecations: ["legacy-js-api"],
+      },
+    },
+  },
 });
