@@ -4,6 +4,6 @@
   "compilerOptions": {
     "composite": true,
     "types": ["node", "bootstrap", "vite/client"],
-    "noEmit": false
+    "noEmit": true
   }
 }
