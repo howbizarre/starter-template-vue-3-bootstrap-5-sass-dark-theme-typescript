@@ -4,6 +4,6 @@
   "compilerOptions": {
     "composite": true,
     "types": ["node", "bootstrap", "vite/client"],
-    "noEmit": true
+    "noEmit": false // Add this line to enable emit
   }
 }
