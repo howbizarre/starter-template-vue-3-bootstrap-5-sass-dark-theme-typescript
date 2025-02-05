@@ -2,6 +2,7 @@
   <div class="border-top py-3 d-flex justify-content-between align-items-center">
     <section>
       <Refs /> <a href="https://bizarre.how/" class="text-decoration-none" title="Starter by How Bizarre">How Bizarre</a>
+
       <a href="https://github.com/howbizarre/starter-template-vue-3-bootstrap-5-sass-dark-theme-typescript"
         class="text-decoration-none ms-1" title="Boilerplate for Vue 3 with Vite and Bootstrap 5 with Icons">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
@@ -25,6 +26,7 @@
               fill-rule="evenodd" clip-rule="evenodd"></path>
           </svg>
         </div>
+        
         <div v-else class="d-flex justify-content-between align-items-center">
           <small class="me-1">Darken</small>
           <svg class="pa-0 ma-0" width="20" height="20" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
