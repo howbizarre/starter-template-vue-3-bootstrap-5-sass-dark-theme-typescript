@@ -26,7 +26,7 @@
               <stop offset="1" stop-color="#FFA800" />
             </linearGradient>
           </defs>
-        </svg><sup><small class="badge rounded-pill bg-info me-1">6</small></sup>
+        </svg><sup><small class="badge rounded-pill bg-info me-1">7</small></sup>
 
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 118 94" role="img">
           <title>Bootstrap</title>
