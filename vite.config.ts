@@ -10,12 +10,11 @@ export default defineConfig({
     },
   },
 
-  /** This rule should be removed after new version of Bootstrap */
+  /** Silence Sass deprecation warnings for Bootstrap compatibility */
   css: {
     preprocessorOptions: {
       scss: {
-        api: "modern-compiler",
-        silenceDeprecations: ["legacy-js-api", "mixed-decls", "color-functions", "global-builtin", "import"],
+        silenceDeprecations: ["legacy-js-api", "color-functions", "global-builtin", "import"],
       },
     },
   },
